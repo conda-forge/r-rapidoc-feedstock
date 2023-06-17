@@ -1,11 +1,11 @@
-About r-rapidoc
-===============
+About r-rapidoc-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rapidoc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/meztez/rapidoc
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rapidoc-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of 'HTML', 'JavaScript', 'CSS' and fonts assets that generate 'RapiDoc' documentation from an 'OpenAPI' Specification: <https://mrin9.github.io/RapiDoc/>.
 
