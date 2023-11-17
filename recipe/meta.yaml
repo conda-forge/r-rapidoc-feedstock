@@ -1,4 +1,4 @@
-{% set version = '8.4.3' %}
+{% set version = "9.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rapidoc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rapidoc/rapidoc_{{ version }}.tar.gz
-  sha256: 16da468894aee882d2a0a08d18d86334f2eb6d75bbbcc102546abd188508eec4
+  sha256: 6c90e8181b003cad2c778b9b6ab50648422bceafc3e2ba6f4fd46bd43971fcdb
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,8 +39,7 @@ test:
 about:
   home: https://github.com/meztez/rapidoc
   license: MIT
-  summary: 'A collection of ''HTML'', ''JavaScript'', ''CSS'' and fonts assets that generate
-    ''RapiDoc'' documentation from an ''OpenAPI'' Specification: <https://mrin9.github.io/RapiDoc/>.'
+  summary: 'A collection of ''HTML'', ''JavaScript'', ''CSS'' and fonts assets that generate ''RapiDoc'' documentation from an ''OpenAPI'' Specification: <https://mrin9.github.io/RapiDoc/>.'
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
